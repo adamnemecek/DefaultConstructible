@@ -1,4 +1,4 @@
-struct DefaultConstructible {
 
-    var text = "Hello, World!"
+protocol DefaultConstructible {
+    init()
 }
