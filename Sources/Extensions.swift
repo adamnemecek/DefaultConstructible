@@ -28,3 +28,9 @@ extension UTF32: DefaultConstructible {}
 extension UnicodeScalar: DefaultConstructible {}
 extension UnsafeMutablePointer: DefaultConstructible {}
 extension UnsafePointer: DefaultConstructible {}
+
+public extension RangeReplaceableCollection where Iterator.Element: DefaultConstructible {
+  public init(count: Int) {
+    self.init(repeating: Iterator.Element(), count: count)
+  }
+}

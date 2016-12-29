@@ -1,4 +1,4 @@
 
-protocol DefaultConstructible {
+public protocol DefaultConstructible {
     init()
 }
